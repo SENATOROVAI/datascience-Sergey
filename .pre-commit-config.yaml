@@ -116,6 +116,10 @@ repos:
           - types-setuptools
 
         args:
+          - --cache-dir=/dev/null
+          - --cache-dir=nul
+          - --no-incremental
+          - --explicit-package-bases
           - --ignore-missing-imports
           - --disallow-untyped-calls
           - --disallow-untyped-defs
@@ -128,17 +132,24 @@ repos:
           - --disallow-any-generics
           - --disallow-subclassing-any
           - --local-partial-types
-          - --non-interactive
-          - --install-types
           - --pretty
           - --force-uppercase-builtins
           - --force-union-syntax
+          - --warn-unreachable
+          - --warn-redundant-casts
+          - --warn-return-any
+
+
 
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.9.0
     hooks:
       - id: mypy
         args:
+          - --cache-dir=/dev/null
+          - --cache-dir=nul
+          - --no-incremental
+          - --explicit-package-bases
           - --ignore-missing-imports
           - --disallow-untyped-calls
           - --disallow-untyped-defs
@@ -146,17 +157,19 @@ repos:
           - --strict
           - --extra-checks
           - --disallow-any-unimported
-          - --disallow-any-expr
           - --disallow-any-decorated
           - --disallow-any-explicit
           - --disallow-any-generics
           - --disallow-subclassing-any
           - --local-partial-types
-          - --non-interactive
-          - --install-types
           - --pretty
           - --force-uppercase-builtins
           - --force-union-syntax
+          - --warn-unreachable
+          - --warn-redundant-casts
+          - --warn-return-any
+
+
 
         additional_dependencies:
           - mypy
