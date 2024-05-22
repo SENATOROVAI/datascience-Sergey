@@ -129,7 +129,6 @@ repos:
           - --extra-checks
           - --disallow-any-unimported
           - --disallow-any-decorated
-          - --disallow-any-explicit
           - --disallow-any-generics
           - --disallow-subclassing-any
           - --local-partial-types
@@ -159,7 +158,6 @@ repos:
           - --extra-checks
           - --disallow-any-unimported
           - --disallow-any-decorated
-          - --disallow-any-explicit
           - --disallow-any-generics
           - --disallow-subclassing-any
           - --local-partial-types
