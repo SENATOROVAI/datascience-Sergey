@@ -3,7 +3,7 @@ repos:
     rev: v1.7.5
     hooks:
       - id: docformatter
-        args: [ 
+        args: [
             --in-place,
             --wrap-descriptions=79,
             --style=google,
@@ -138,7 +138,6 @@ repos:
           - --extra-checks
           - --disallow-any-decorated
           - --disallow-any-generics
-          - --disallow-subclassing-any
           - --local-partial-types
           - --pretty
           - --force-uppercase-builtins
@@ -166,7 +165,6 @@ repos:
           - --extra-checks
           - --disallow-any-decorated
           - --disallow-any-generics
-          - --disallow-subclassing-any
           - --local-partial-types
           - --pretty
           - --force-uppercase-builtins
