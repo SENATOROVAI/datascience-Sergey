@@ -76,9 +76,12 @@ repos:
     rev: v2.2.6
     hooks:
       - id: codespell
+        exclude:
+            ^\s*"image\/png":\s.*
         additional_dependencies:
           - tomli
         args:
+          - --ignore-regex=^\s*"image\/png":\s.*
           - --skip=*.js,*.html,*.css,*.svg",*.json,*.png,*.jpg,*.yml,*.yaml
   - repo: https://github.com/nbQA-dev/nbQA
     rev: 1.8.5
